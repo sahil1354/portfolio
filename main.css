@@ -1,0 +1,455 @@
+:root {
+    --color1: black;
+    --color2: white;
+    --color3: #ff1749;
+}
+
+html {
+    font-size: 68.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color1);
+    font-family: 'Century Gothic';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    margin: 1.2rem;
+    color: var(--color2);
+    font-size: 2.5rem;
+    font-family: 'Rockwell', sans-serif;
+    font-weight: 500;
+    background-color: var(--color1);
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color1);
+    position: sticky;
+    top: 0;
+    z-index: 500;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav>a {
+    text-decoration: none;
+    color: rgb(167, 166, 166);
+    margin: 1.2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+#nav>a:hover {
+    color: var(--color3);
+}
+
+#poster {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("img/travel/IMG-7.jpg");
+    display: flex;
+    background-size:cover;
+    background-position:center;
+
+    justify-content: center;
+    padding: 17vw;
+}
+
+#upper {
+    font-size: 8rem;
+    color: white;
+}
+
+#text1 {
+    font-size: 8rem;
+    -webkit-text-stroke: 0.1rem #ffffff;
+    color: #0f0f0f00;
+    position: relative;
+    font-weight: 600;
+}
+
+#postertext {
+    overflow: hidden;
+}
+
+#text1::before {
+    position: absolute;
+    width: 100%;
+    content: "SAHIL.";
+    color: #ffffff;
+    border-right: 0.5rem solid #ff1749;
+    animation: slide 4s linear;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+#text1::active {
+    animation: slide 3s linear;
+}
+
+@keyframes slide {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 98%;
+    }
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.box {
+    margin: 1rem;
+    height: 42rem;
+    width: 42rem;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.box>img {
+    height: 100%;
+    width: 100%;
+    image-rendering: optimizeSpeed;
+    filter: grayscale(100%);
+}
+
+.gallery-type {
+    top: 42%;
+    left: 50%;
+    position: absolute;
+    color: var(--color2);
+    font-size: 4rem;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-button {
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    color: var(--color2);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border: 2px solid var(--color2);
+    font-size: 1.3rem;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-button:hover {
+    background-color: #E5DDC8;
+    color: #0C2D48
+}
+
+#pricetags {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container {
+    background-color: rgb(31, 31, 31);
+    text-align: center;
+    height: 30rem;
+    width: 40rem;
+    margin: 2.5rem;
+    border-radius: 10px;
+}
+
+.logo-title {
+    font-size: 2.5rem;
+    color: var(--color2);
+}
+
+.logo-desc {
+    text-align: justify;
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    color: rgb(133, 133, 133);
+}
+
+.price-lable {
+    color: var(--color3);
+    font-size: 1.7rem;
+}
+
+.icon1>img {
+    margin: 2rem;
+    height: 7rem;
+    transition: all ease-out;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#profilepic {
+    margin: 5rem;
+    margin-top: 2rem;
+    background-image: url("img/Screenshot_2022-03-15-16-39-39-70_1c337646f29875672b5a61192b9010f9.jpg");
+    background-size: cover;
+    height: 45rem;
+    width: 35rem;
+    
+    border-radius: 10px;
+}
+
+#info-box {
+    height: 45rem;
+    width: 35rem;
+    margin: 5rem;
+    margin-top: 2rem;
+    color: white;
+    justify-content: center;
+}
+
+#info-text {
+    margin: 3rem;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.bar {
+    margin: 2rem 3rem;
+}
+
+.info span {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.pline {
+    height: 1rem;
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.pline span {
+    height: 100%;
+    background-color: #ff1749;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.pline.ph span {
+    width: 70%;
+}
+
+.pline.ve span {
+    width: 85%;
+}
+
+.pline.ps span {
+    width: 80%
+}
+
+#smicons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#instagram>img,
+#youtube>img,
+#whatsapp>img,
+#linkedin>img {
+    height: 4rem;
+    width: 4rem;
+    margin: 1.5rem;
+    transition: 0.1 ease-out;
+}
+
+#instagram>img:hover,
+#youtube>img:hover,
+#whatsapp>img:hover,
+#linkedin>img:hover {
+    transform: scale(1.1);
+}
+
+#area3 {
+    background-color: rgb(31, 31, 31);
+}
+
+#contactcard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#mycontact {
+    color: var(--color2);
+    width: 37rem;
+    margin: 3rem;
+    padding: 2rem;
+}
+
+#contactform {
+    width: 37rem;
+    margin: 3rem;
+    padding: 2rem;
+}
+
+#name,
+#email,
+#contactno,
+#message {
+    background-color: var(--color2);
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    width: 95%;
+    padding: 1rem;
+}
+
+.sub-title {
+    color: #ff1749;
+    font-size: 2.5rem;
+}
+
+.st1 {
+    font-size: 2rem;
+}
+
+.st2 {
+    font-size: 1.5rem;
+    color: rgb(100, 100, 100);
+    font-weight: 600;
+}
+
+#sendbtn {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    background-color: var(--color3);
+    border: 2px solid var(--color3);
+    border-radius: 5px;
+}
+
+#sendbtn:hover {
+    background-color: #920322;
+    color: var(--color2);
+    border: 2px solid white;
+}
+
+.titles {
+    font-size: 4rem;
+    color: var(--color2);
+    padding: 4rem;
+    font-weight: 600;
+}
+
+#copyright {
+    color: var(--color2);
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+#footer {
+    background-color: rgb(17, 17, 17);
+    margin: 0;
+}
+
+#devicons {
+    display: flex;
+    justify-content: center;
+}
+
+#devinstagram>img,
+#devwhatsapp>img,
+#devlinkedin>img {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 1rem;
+    margin-bottom: 0;
+}
+
+#devinstagram>img:hover,
+#devwhatsapp>img:hover,
+#devlinkedin>img:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+    #poster {
+        justify-content: space-around;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("img/travel/IMG-6.jpg");
+        padding: 0;
+        height: 95vh;
+    }
+    #postertext {
+        margin-top: 70%;
+    }
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    #upper,
+    #text1 {
+        font-size: 5rem
+    }
+    #navbar {
+        position: fixed;
+        width: 100%
+    }
+    #nav {
+        justify-content: space-between;
+        padding: 0;
+    }
+    .box {
+        max-height: 35rem;
+    }
+    #nav>a {
+        margin: 0.1rem;
+        font-size: 1.2rem;
+    }
+    #logo {
+        margin: 0.3rem;
+    }
+    #profilepic {
+        width: 100%;
+        margin: 1rem;
+    }
+    #info-box {
+        width: 100%;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    #contactform {
+        margin: 1rem;
+    }
+}

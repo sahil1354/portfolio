@@ -1,0 +1,94 @@
+:root {
+    --color1: black;
+    --color2: white;
+    --color3: #ff1749;
+}
+
+html {
+    font-size: 68.5%;
+}
+
+body {
+    background-color: var(--color1);
+    font-family: 'Century Gothic';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    margin: 1.2rem;
+    color: var(--color2);
+    font-size: 2.5rem;
+    font-family: 'Rockwell', sans-serif;
+    font-weight: 500;
+    background-color: var(--color1);
+    animation: slide 3s ease-in;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color1);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav>a {
+    text-decoration: none;
+    color: rgb(167, 166, 166);
+    margin: 1.2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+#nav>a:hover {
+    color: var(--color3);
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.box {
+    margin: 1rem;
+    height: 28rem;
+    width: 32rem;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+}
+
+.box>a>img {
+    height: 100%;
+    width: 100%;
+    image-rendering: optimizeSpeed;
+    filter: grayscale(100%);
+}
+
+.box>a>img:hover {
+    filter: grayscale(0);
+}
+
+.box:hover {
+    transform: scale(1.02);
+}
+
+.titles {
+    font-size: 4rem;
+    color: var(--color2);
+    padding: 5rem;
+    font-weight: 600;
+}

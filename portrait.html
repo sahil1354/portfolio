@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gallery</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='gallery.css'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="logo">SAHIL</div>
+        <div id="nav">
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+    <center class="titles">Portrait Photography</center>
+
+    <div id="gallery">
+        <div class="box" data-aos="fade-up">
+            <img src="img/portrait/portait.jpeg" class="gallery-img">
+        </div>
+        <div class="box" data-aos="fade-up">
+            <img src="img/portrait/PXL_20211214_132224697.PORTRAIT.jpeg" class="gallery-img">
+        </div>
+        <div class="box" data-aos="fade-up">
+            <img src="img/portrait/PXL_20211214_132640491.PORTRAIT.jpeg" class="gallery-img">
+        </div>
+        <div class="box" data-aos="fade-up">
+            <img src="img/portrait/sahil.jpeg" class="gallery-img">
+        </div>
+
+
+    </div>
+    <script>
+        AOS.init({
+            offset: 250,
+            duration: 800
+        });
+    </script>
+</body>
+
+</html>
